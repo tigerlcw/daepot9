@@ -16,7 +16,7 @@ p {
 }
 
 .sidenav-trigger {
-  color: #26a69a;
+  color: #933838;
 }
 
 .parallax-container {
@@ -60,6 +60,22 @@ footer.page-footer {
 	height:100px;
 	width: 100%;
 	position: fixed;
-	left: 83%;
-	bottom: 0px;
+	left: 0;
+	bottom: -50px;
+}
+
+.fixedfloat{
+  height:100px;
+	width: 100%;
+	position: fixed;
+	left: 320px;
+	bottom: 45px;
+}
+
+#staggered-test li {
+  opacity: 0;
+}
+
+#image-test {
+  opacity: 0;
 }
