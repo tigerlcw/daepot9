@@ -2,19 +2,22 @@ doctype html
 html
   head(meta-charset='utf-8')
     title 회원가입
+    meta(name='viewport' content='width=device-width, initial-scale=3.0')
     link(rel='stylesheet', href='/stylesheets/style.css')
     script(src='/javascripts/register-js.js')
   body
     form(action='/register' method='post' id='form')
-      h3(style="font-size:72px;") E-mail
-      input(type='email' name='email' id='email' style="width:400px;height:60px;font-size:64px;")
+      h3(style="font-size:48px;") E-mail
+      input(type='email' name='email' id='email' style="width:300px;font-size:36px;")
       br
-      h3(style="font-size:72px;") Password
-      input(type='password' name='pw' id='pw' style="width:400px;height:60px;font-size:64px;")
+      h3(style="font-size:48px;") Password
+      input(type='password' name='pw' id='pw' style="width:300px;font-size:36px;")
       br
-      h3(style="font-size:72px;") Re - Password
-      input(type='password' id='rpw' style="width:400px;height:60px;font-size:64px;")
+      h3(style="font-size:48px;") Re - Password
+      input(type='password' id='rpw' style="width:300px;font-size:36px;")
       br
       input(type='text', id='truely' name='truely' style='display: none;')
       br
-      button(type='submit' onclick='register()' style="font-size:64px;") submit
+      br
+      br
+      button(type='submit' onclick='register()' style="font-size:36px;") submit

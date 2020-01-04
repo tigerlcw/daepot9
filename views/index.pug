@@ -2,30 +2,33 @@ doctype html
 html
   head(meta-charset='utf-8')
     title 대팟9
+    meta(name='viewport' content='width=device-width, initial-scale=3.0')
     link(rel='stylesheet', href='/stylesheets/style.css')
     script(src='/javascripts/index-js.js')
   body
     center 
-      h1(style="font-size:120px;") 대팟9
+      h1(style="font-size:72px;") 대팟9
 
       br
       br
       
       if !logined
-        h3(style="font-size:72px;") 로그인해주세요.
+        h3(style="font-size:36px;") 로그인해주세요.
         br
         br
 
-        button(id='login' onclick='goUrl("/login")'  style="font-size:64px;") 로그인
+        button(id='login' onclick='goUrl("/login")'  style="font-size:36px;") 로그인
         br
         br
-        button(id='register' onclick='goUrl("/register")' style="font-size:64px;") 회원가입
+        button(id='register' onclick='goUrl("/register")' style="font-size:36px;") 회원가입
        
       else if !cert
-        button(id='cert' onclick='goUrl("/cert")') account certification
+        button(id='cert' onclick='goUrl("/cert")' style="font-size:36px;") 학교 인증
       else
-        button(id='logout' onclick='goUrl("/logout")' style="font-size:64px;") logout
-        button(id='logout' onclick='goUrl("/request.html")' style="font-size:64px;") 서비스이용
+        button(id='logout' onclick='goUrl("/logout")' style="font-size:36px;") logout
+        br
+        br
+        button(id='logout' onclick='goUrl("/request.html")' style="font-size:36px;") 서비스이용
     
 
 

@@ -1,12 +1,16 @@
 doctype html
 html
   head(meta-charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=3.0')
     title 계정 인증
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
     form(action='/cert' method='post')
-      h3(style="font-size:72px;") 확인 코드
-      input(style="width:400px;height:60px;font-size:64px; border-color:red" type='text' name='code' id='code')
+      h3(style="font-size:48px;") 확인 코드
+      input(style="width:300px;font-size:36px; border-color:red" type='text' name='code' id='code')
       br
-      button(style="font-size:64px;" type='submit') submit
-    
+      br
+      br
+      br
+      br
+      button(style="font-size:36px;" type='submit') submit

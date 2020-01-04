@@ -3,8 +3,8 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>대팥구 - 등록</title>
-
+  <title>대팟구 - 등록</title>
+  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -88,5 +88,42 @@
 
 </textarea>
 
+<a id="kakao-link-btn" href="javascript:sendLink()">
+  <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"/></a>
+  <script type='text/javascript'>
+    //<![CDATA[
+      // // 사용할 앱의 JavaScript 키를 설정해 주세요.
+      Kakao.init('31d6fd7d574a1509fbc8dc61b2d63c37');
+      // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+      function sendLink() {
+        Kakao.Link.sendDefault({
+          objectType: 'feed',
+          content: {
+            title: '대학생활의 즐거움 대팟구!',
+            description: '#신입생 #대학생 #의뢰 #스터디 #모임',
+            imageUrl: '../img/icon.png',
+            link: {
+              mobileWebUrl: 'https://developers.kakao.com',
+              webUrl: 'https://developers.kakao.com'
+            }
+          },
+          social: {
+            likeCount: 13,
+            commentCount: 32,
+            sharedCount: 2
+          },
+          buttons: [
+            {
+              title: '웹으로 보기',
+              link: {
+                mobileWebUrl: 'https://developers.kakao.com',
+                webUrl: 'https://developers.kakao.com'
+              }
+            },
+          ]
+        });
+      }
+    //]]>
+  </script>
   </body>
 </html>

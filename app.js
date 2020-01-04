@@ -7,7 +7,7 @@ var server = http.Server(app);
 var socket = require('socket.io');
 var io = socket(server);
  
-var port = process.env.PORT || 3000; //*
+var port = process.env.PORT || 8080; //*
 
 var socketList = [];
 
@@ -20,6 +20,10 @@ var registerRouter = require('./routes/register');
 var loginRouter = require('./routes/login');
 var logoutRouter = require('./routes/logout');
 var certRouter = require('./routes/certification');
+
+var usersRouter = require('./routes/users');
+var reqsRouter = require('./routes/reqs');
+var grpsRouter = require('./routes/grps');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -34,6 +38,9 @@ app.use('/register', registerRouter);
 app.use('/login', loginRouter);
 app.use('/logout', logoutRouter);
 app.use('/cert', certRouter);
+app.use('/users', usersRouter);
+app.use('/reqs', reqsRouter);
+app.use('/grps', grpsRouter);
 // ----------------------------------------------------
 
 app.use('/', function(req, resp) {

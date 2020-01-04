@@ -2,13 +2,19 @@ doctype html
 html
   head(meta-charset='utf-8')
     title 로그인
+    meta(name='viewport' content='width=device-width, initial-scale=3.0')
     link(rel='stylesheet', href='/stylesheets/style.css')
     script(src='/javascripts/login-js.js')
   body
     form(id='form' action='/login' method='post')
-      h3(style="font-size:64px;") E-mail
-      input(style="width:400px;height:60px;font-size:64px;" type='email' name='email')
-      h3(style="font-size:64px;") Password
-      input(style="width:400px;height:60px;font-size:64px;" type='password' name='pw')
+      h3(style="font-size:48px;") E-mail
+      input(style="width:300px; font-size:36px;" type='email' name='email')
+      h3(style="font-size:48px;") Password
+      input(style="width:300px; font-size:36px;" type='password' name='pw')
       br
-      button(style="font-size:64px;" type='submit') submit
+      br
+      br
+      br
+      br
+      br
+      button(style="font-size:36px;" type='submit') 로그인
