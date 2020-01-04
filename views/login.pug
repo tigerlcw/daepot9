@@ -6,10 +6,9 @@ html
     script(src='/javascripts/login-js.js')
   body
     form(id='form' action='/login' method='post')
-      p E-mail
-      input(type='email' name='email')
+      h3(style="font-size:64px;") E-mail
+      input(style="width:400px;height:60px;font-size:64px;" type='email' name='email')
+      h3(style="font-size:64px;") Password
+      input(style="width:400px;height:60px;font-size:64px;" type='password' name='pw')
       br
-      p Password
-      input(type='password' name='pw')
-      br
-      button(type='submit') submit
+      button(style="font-size:64px;" type='submit') submit

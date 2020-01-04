@@ -6,14 +6,14 @@ html
     script(src='/javascripts/register-js.js')
   body
     form(action='/register' method='post' id='form')
-      p E-mail
-      input(type='email' name='email' id='email')
+      h3(style="font-size:72px;") E-mail
+      input(type='email' name='email' id='email' style="width:400px;height:60px;font-size:64px;")
       br
-      p Password
-      input(type='password' name='pw' id='pw')
+      h3(style="font-size:72px;") Password
+      input(type='password' name='pw' id='pw' style="width:400px;height:60px;font-size:64px;")
       br
-      p Re - Password
-      input(type='password' id='rpw')
+      h3(style="font-size:72px;") Re - Password
+      input(type='password' id='rpw' style="width:400px;height:60px;font-size:64px;")
       br
-      input(type='text', id='truely' name='truely' style='display: none;')
-      button(type='submit' onclick='register()') submit
+      input(type='text', id='truely' name='truely' style='display: none;' style="width:400px;height:60px;font-size:64px;")
+      button(type='submit' onclick='register()' style="font-size:64px;") submit

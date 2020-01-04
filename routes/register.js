@@ -44,6 +44,8 @@ router.post('/', function(req, res, next) {
             transporter.close();
         });
 
+        test.cert = false;
+
         alert('Check your email');
         res.redirect('/index');
     }

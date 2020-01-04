@@ -5,7 +5,8 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
     form(action='/cert' method='post')
-      p 확인 코드
-      input(type='text' name='code' id='code')
-      button(type='submit') submit
+      h3(style="font-size:72px;") 확인 코드
+      input(style="width:400px;height:60px;font-size:64px; border-color:red" type='text' name='code' id='code')
+      br
+      button(style="font-size:64px;" type='submit') submit
     
