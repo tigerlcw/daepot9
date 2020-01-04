@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>대팥구</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">대팥9</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="trade.html"> <i class="large material-icons">autorenew 대팥거래</i></a></li>
+        <li><a href="request.html"> <i class="large material-icons">priority_high 의뢰인</i></a></li>
+        <li><a href="group.html"> <i class="large material-icons">group_add 파티구함</i></a></li>
+      </ul>
+      <ul id="nav-mobile" class="sidenav">
+        <li><div class="row">
+          <form class="col s12">
+              <div class="input-field col s12">
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1">검색</label>
+            </div>
+          </form>
+        </div></li>
+        <li><a href="trade.html"> <i class="large material-icons">autorenew</i>대팥거래</a></li>
+        <li><a href="request.html"> <i class="large material-icons">priority_high</i>의뢰인</a></li>
+        <li><a href="group.html"> <i class="large material-icons">group_add</i>파티구함</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <!-- Customizable input  -->
+  <div class="chips">
+    <input class="custom-class">
+  </div>
+
+  <div class="fixed">
+    <a class="btn-floating btn-large waves-effect waves-light red" href="request_insert.html">
+      <i class="material-icons right">create</i>
+    </a>
+  </div>
+<pre>
+여기에는
+의뢰,퀘스트가
+들어가는
+부분인데
+콘텐츠 디자인은
+어찌 해야 할까
+막막하다.
+</pre>
+<div style="text-align: center;">
+<ul class="pagination">
+  <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+  <li class="active"><a href="#!">1</a></li>
+  <li class="waves-effect"><a href="#!">2</a></li>
+  <li class="waves-effect"><a href="#!">3</a></li>
+  <li class="waves-effect"><a href="#!">4</a></li>
+  <li class="waves-effect"><a href="#!">5</a></li>
+  <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+</ul>
+</div>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+  // Or with jQuery
+  $('.chips').chips({
+
+    limit : 3 //태그 횟수 제한
+  });
+        
+    </script>
+
+  </body>
+</html>
