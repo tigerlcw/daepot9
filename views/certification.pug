@@ -1,0 +1,11 @@
+doctype html
+html
+  head(meta-charset='utf-8')
+    title 계정 인증
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    form(action='/cert' method='post')
+      p 확인 코드
+      input(type='text' name='code' id='code')
+      button(type='submit') submit
+    

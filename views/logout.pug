@@ -1,0 +1,16 @@
+doctype html
+html
+  head(meta-charset='utf-8')
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='/javascripts/logout-js.js')
+  body
+    h1= title
+    p Welcome to #{title}
+
+    if cert
+        button(id='register') register
+        button(id='login') login
+    else
+        button(id='logout') logout
+

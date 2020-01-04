@@ -1,0 +1,15 @@
+doctype html
+html
+  head(meta-charset='utf-8')
+    title 로그인
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='/javascripts/login-js.js')
+  body
+    form(id='form' action='/login' method='post')
+      p E-mail
+      input(type='email' name='email')
+      br
+      p Password
+      input(type='password' name='pw')
+      br
+      button(type='submit') submit

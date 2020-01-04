@@ -1,0 +1,19 @@
+doctype html
+html
+  head(meta-charset='utf-8')
+    title 회원가입
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='/javascripts/register-js.js')
+  body
+    form(action='/register' method='post' id='form')
+      p E-mail
+      input(type='email' name='email' id='email')
+      br
+      p Password
+      input(type='password' name='pw' id='pw')
+      br
+      p Re - Password
+      input(type='password' id='rpw')
+      br
+      input(type='text', id='truely' name='truely' style='display: none;')
+      button(type='submit' onclick='register()') submit

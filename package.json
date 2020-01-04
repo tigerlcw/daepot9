@@ -4,8 +4,15 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
+    "alert-node": "^2.1.1",
     "express": "^4.17.1",
-    "socket.io": "^2.3.0"
+    "materialize-css": "^1.0.0-rc.2",
+    "morgan": "^1.9.1",
+    "nodemailer": "^6.4.2",
+    "path": "^0.12.7",
+    "pug": "^2.0.4",
+    "socket.io": "^2.3.0",
+    "socketio": "^1.0.0"
   },
   "devDependencies": {},
   "scripts": {
