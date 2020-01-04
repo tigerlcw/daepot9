@@ -7,7 +7,8 @@ var server = http.Server(app);
 var socket = require('socket.io');
 var io = socket(server);
  
-var port = 5000;
+var port = process.env.PORT || 3000; //*
+
 var socketList = [];
 
 // ----------------------------------------------------
