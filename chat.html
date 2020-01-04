@@ -4,16 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>대팟구 - 채팅</title>
+    <style>
+        #container {
+            width: 100%;
+            height: 350px;
+            border: 2px solid black;
+            background: whitesmoke;
+        }
+        #chatView {
+            height: 100%;
+            overflow-y: scroll;
+        }
+        #chatForm {
+            height: 10%;
+            border-top: 1px solid black;
+            text-align: center;
+        }
+        #msg {
+            width: 76%;
+            height: 32px;
+            border-radius: 8px;
+
+        }
+        #send {
+            width: 20%;
+            height: 40px;
+            border-radius: 50px;
+            background: black;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <div id="container">
         <div id="chatView">
- 
         </div>
         <form id="chatForm" onsubmit="return false">
+            <hr>
             <input type="text" id="msg">
             <input type="submit" id="send" value="전송">
+            <hr>
         </form>
     </div>
     
@@ -65,6 +96,6 @@
             chatView.scrollTop = chatView.scrollHeight;
         });
     </script>
-    
 </body>
+
 </html>
