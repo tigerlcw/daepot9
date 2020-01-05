@@ -15,8 +15,7 @@ mongoose.connect('mongodb://localhost:27017/dp9');
 
 router.get('/', function(req, res, next) {
     Request.find({}, function(err, result) {
-        res.write(JSON.stringify(result));
-        res.end();
+        res.render('result', { jj: JSON.stringify(result) });
     });
 });
 
