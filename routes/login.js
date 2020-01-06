@@ -49,16 +49,16 @@ let transporter = nodemailer.createTransport({
     service: "Gmail",
     host: 'smtp.gmail.com',
     auth: {
-        user: "horangi18@gmail.com",
-        pass: "horangi99"
+        user: "",
+        pass: ""
     }
 });
 
 var mailOpt = {
-    from: 'horangi18@gmail.com', // sender address
-    to: "lcwtiger@gmail.com", // list of receivers
+    from: '', // sender address
+    to: "", // list of receivers
     subject: "Hello ✔", // Subject line
-    text: "분탕러 이찬우 선린의 위상을 한없이 높여 놓은 자. 부름에 응답하라.", // plain text body
+    text: "", // plain text body
   };
 
 router.get('/test', function(req, res, next) {

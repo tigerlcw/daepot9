@@ -24,7 +24,7 @@ router.post('/', function(req, res, next) {
 
         // email sending
         var mOpt = {
-            from: 'horangi18@gmail.com', // sender address
+            from: '', // sender address
             to: test.email, // list of receivers
             subject: "똑. 똑. 확인 메일 왔어요!", // Subject line
             html: ' \
@@ -56,8 +56,8 @@ let transporter = nodemailer.createTransport({
     service: "Gmail",
     host: 'smtp.gmail.com',
     auth: {
-        user: "horangi18@gmail.com",
-        pass: "horangi99"
+        user: "",
+        pass: ""
     }
 });
 
